@@ -1,0 +1,46 @@
+<html>
+<head>
+		<style>
+			body{
+				 background-attachment:fixed;
+				 text-align:center;
+				 font-family:Arial,san-serif;
+				 padding-top:80px;
+				 background-image: url('https://image.shutterstock.com/image-photo/hospital-building-260nw-291911057.jpg');
+				 background-size:1550px;
+				 height:60px;
+		</style>
+	</head>
+	<body>
+	<center>
+		<h1 style="color:black; font-size:40px;" >
+	<div class="imgcontainer">
+	 <img src="https://i.pinimg.com/originals/51/da/e3/51dae37ea4bba453e090b67a7d11a22b.jpg" alt="avatar" class="avatar" width="100px" style="border-radius:90px;">
+	</div>Display page</h1>
+		<table>
+			<theader>
+                <th>PATIENTID</th>
+				<th>PATIENTNAME</th>
+				<th>AGE</th>
+				<th>GENDER</th>
+				<th>DISEASE</th>
+                <th>PHONE NO</th>
+			</theader>
+			{% for row in hrows %}
+				<tr>
+					 <td>{{row[0] }}</td>&nbsp
+					 <td>{{row[1] }}</td>&nbsp
+					 <td>{{row[2] }}</td>&nbsp
+					 <td>{{row[3] }}</td>&nbsp
+					 <td>{{row[4] }}</td>&nbsp
+					 <td>{{row[5] }}</td>&nbsp
+				</tr>
+			{% endfor %}
+
+
+		</table>
+		</center>
+<h2>Do u want to delete or insert</h2>
+<a href="loginsuccess.html"> Go back to loginsuccess page</a>
+	</body>
+</html>

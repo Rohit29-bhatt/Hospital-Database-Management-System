@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<style>
+			body{
+				 background-attachment:fixed;
+				 text-align:center;
+				 font-family:Arial,san-serif;
+				 padding-top:80px;
+				 background-image: url('https://as1.ftcdn.net/jpg/01/62/16/26/500_F_162162665_3r5lvEw3vbVlNj0ogQjGJ53nNuB5UF8O.jpg');
+				 background-size:1550px;
+				 height:60px;
+			}
+			#shape{
+			height:50px;
+			width:100px;
+			border-radius:10px;
+			border:0;
+			background-color:skyblue;
+			font-size:30px;
+			border:1px solid;
+			}
+			#a{
+				border-radius:5px;
+				height:30px;
+				width:250px;
+				font-size:15px;
+			}
+			p{
+				font-size:20px;
+			}
+			
+			
+			#colr{
+				color:black;
+			}	
+			
+		</style>
+	</head>
+	<body>
+	<section>
+		<div class="layout">
+		<form action="/logincheck" method="post">
+			<h1 style="color:black; font-size:40px;">login page</h1>
+			<h1>Welcome to Hospital Database Management System</h1>
+			 <div class="imgcontainer">
+				 <img src="https://i.pinimg.com/originals/51/da/e3/51dae37ea4bba453e090b67a7d11a22b.jpg" alt="avatar" class="avatar" width="100px" style="border-radius:90px;">
+			 </div>
+			<p id="colr">Enter user name:<input id="a" type="text" name="un"></p>
+			<p id="colr">Enter password :<input id="a" type="text" name="pw"></p>
+			<input id='shape' type="submit" value="Login"><center><p>Not a Member?<a href="signup"> Sign Up </a> </p> </center>
+		</form>
+		</div>
+	</section>
+    </body>
+</html>

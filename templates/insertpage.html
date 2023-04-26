@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Insert</title>
+		<style>
+			body{
+				 background-attachment:fixed;
+				 text-align:center;
+				 font-family:Arial,san-serif;
+				 padding-top:80px;
+				 background-image: url('https://image.shutterstock.com/image-photo/hospital-building-260nw-291911057.jpg');
+				 background-size:1550px;
+				 height:60px;
+			}
+			#shape{
+			height:50px;
+			width:100px;
+			border-radius:10px;
+			border:0;
+			background-color:skyblue;
+			font-size:30px;
+			border:1px solid;
+			}
+			#a{
+				border-radius:5px;
+				height:30px;
+				width:250px;
+				font-size:15px;
+			}
+			p{
+				font-size:20px;
+			}
+			
+			
+			#colr{
+				color:black;
+			}	
+			
+		</style>
+	</head>
+	<body>
+	<h1 style="color:black; font-size:40px;" >
+	<div class="imgcontainer">
+	 <img src="https://i.pinimg.com/originals/51/da/e3/51dae37ea4bba453e090b67a7d11a22b.jpg" alt="avatar" class="avatar" width="100px" style="border-radius:90px;">
+	</div>New Patient details:</h1>
+		<form action="/insertbackend" method="post">
+		<a id="pid">Enter patientid :<input type="number" name="pid"></a>
+		<a id="pnname">Enter patientname:<input type="text" name="pname"></a>
+		<a id="age">Enter Age:<input type="number" name="Age"> </a>
+		<a id="gender">Enter Gender :<input type="text" name="Gender"></a>
+		<a id="disease">Enter disease :<input type="text" name="Disease"></a><br><br>
+		<a id="phoneno">Enter Phoneno :<input type="number" name="PhoneNo"></a><br><br>
+		<input id='shape'type="submit" value="Insert">
+		</form>
+
+
+
+
+	</body>
+</html>
